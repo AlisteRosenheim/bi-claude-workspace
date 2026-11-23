@@ -1,0 +1,14 @@
+﻿# Signing key and its password: never commit
+android/keystore.properties
+*.jks
+*.keystore
+# Machine-specific and build output
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+# Copyrighted deck art and guidebook text (kept locally only)
+*starter-pack*.json
+*deck-pack*.json
+arcanis-card-meanings.json
+arcanis-spreads.json

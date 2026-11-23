@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16121f">
+<title>Tarot Reader</title>
+<link rel="stylesheet" href="css/app.css?v=11">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="star">✦</span> Tarot Reader</div>
+</header>
+<nav id="nav" aria-label="Sections"></nav>
+<main id="view"></main>
+
+<dialog id="dlg"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="busy" hidden><div class="spinner"></div><p id="busy-msg"></p></div>
+
+<!-- file pickers -->
+<input type="file" id="fCamera" accept="image/*" capture="environment" data-change="photo" hidden>
+<input type="file" id="fGallery" accept="image/*" data-change="photo" hidden>
+<input type="file" id="fArt" accept="image/*" multiple data-change="art" hidden>
+<input type="file" id="fArtDir" webkitdirectory multiple data-change="art" hidden>
+<input type="file" id="fCardText" accept=".csv,.tsv,.txt,.json,text/csv,application/json" data-change="cardText" hidden>
+<input type="file" id="fSpreadText" accept=".csv,.tsv,.txt,.json,text/csv,application/json" data-change="spreadText" hidden>
+<input type="file" id="fTemplate" accept="image/*" data-change="template" hidden>
+<input type="file" id="fSpreadPhoto" accept="image/*" data-change="spreadPhoto" hidden>
+<input type="file" id="fCardImage" accept="image/*" data-change="cardImage" hidden>
+<input type="file" id="fRestore" accept=".json,application/json" data-change="restore" hidden>
+
+<script src="js/vision.js?v=11"></script>
+<script src="js/data.js?v=11"></script>
+<script src="js/template.js?v=11"></script>
+<script src="js/app.js?v=11"></script>
+</body>
+</html>

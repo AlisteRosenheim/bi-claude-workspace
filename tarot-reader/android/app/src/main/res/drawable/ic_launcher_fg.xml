@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <!-- card outline -->
+    <path android:strokeColor="#D9B56C" android:strokeWidth="2.2" android:fillColor="#00000000"
+        android:pathData="M41,31h26a3,3 0 0 1 3,3v40a3,3 0 0 1 -3,3h-26a3,3 0 0 1 -3,-3v-40a3,3 0 0 1 3,-3z" />
+    <!-- four-point star -->
+    <path android:fillColor="#F1D99C"
+        android:pathData="M54,38C55.2,49 58,51.8 66,54C58,56.2 55.2,59 54,70C52.8,59 50,56.2 42,54C50,51.8 52.8,49 54,38Z" />
+</vector>

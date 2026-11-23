@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Signing key details live in android/keystore.properties (kept out of the app itself).
+def ks = new Properties()
+def ksFile = rootProject.file('keystore.properties')
+if (ksFile.exists()) ksFile.withInputStream { ks.load(it) }
+
+android {
+    namespace 'com.personal.tarotreader'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.personal.tarotreader'
+        minSdk 26
+        targetSdk 35
+        versionCode 5
+        versionName '1.4'
+    }
+
+    signingConfigs {
+        release {
+            if (ksFile.exists()) {
+                storeFile rootProject.file(ks['storeFile'])
+                storePassword ks['storePassword']
+                keyAlias ks['keyAlias']
+                keyPassword ks['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    // The web app in TarotReader/www is bundled as the app's assets.
+    sourceSets {
+        main { assets.srcDirs = ['../../www'] }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.webkit:webkit:1.12.1'
+    implementation 'androidx.core:core:1.13.1'
+}
