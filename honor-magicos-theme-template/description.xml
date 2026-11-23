@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HwTheme>
+  <title>My Honor Theme</title>
+  <designer>Your Name</designer>
+  <screen>WQHD</screen>
+  <version>1</version>
+  <briefInfo>
+A short, user-facing description of what this theme looks like.
+  </briefInfo>
+  <extra>{"extraContentFlag":"0"}</extra>
+</HwTheme>

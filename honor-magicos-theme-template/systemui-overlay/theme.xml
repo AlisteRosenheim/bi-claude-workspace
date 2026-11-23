@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  System UI accent overlay. Structure and the resource key names below are
+  confirmed against a real, working .hnt theme's com.android.systemui
+  package (not guessed) — this is what actually controls Control Center
+  toggle color, sliders, and notification-shade tinting. Values here use
+  the accent palette from ../PALETTE.md.
+
+  Other keys seen in the real sample but left unset here (system default
+  applies): ripple_drawable_dark_color, notification_button_pressed_bg_color,
+  qs_tile_tint_on, volume_image_color, volume_progress_back_color,
+  volume_background_color, volume_background_lower_color, volume_unfocus,
+  volume_line_color, magic_color_bg, hwswitch_off_track_bg,
+  switch_track_off_bg_magic, switch_off_disable_magic, hnnotification_accent,
+  bg_slider_noblur_second, magic_activated, magic_functional_blue,
+  magic_launchercard_public_color_text_secondary,
+  magic_launchercard_public_btn_bg, magic_control_normal,
+  hnnotification_default_color, magic_progress, magic_subtab_text_on,
+  magic_subtab_line_on, magic_bottombar_icon_on, magic_bottombar_text_on,
+  magic_toolbar_icon_actived, magic_toolbar_text_actived. Uncomment/add any
+  of these (with a color value) to extend theming further.
+-->
+<resources>
+    <color name="magic_accent">#FFE62018</color> <!-- Active toggles color in control center: Accent Red -->
+    <color name="hnnotification_icon_color">#FFFFFFFF</color> <!-- Icon color in control center -->
+
+    <color name="hnnotification_brightness_slider_color">#FFE62018</color> <!-- Brightness/volume slider fill: Accent Red -->
+    <color name="hnnotification_brightness_icon_color">#FFFFFFFF</color> <!-- Icons in sliders -->
+    <color name="magic_control_normal_3">#FFFFFFFF</color> <!-- Circle around checkbox in control center audio selection -->
+
+    <color name="volume_slider_background_color">#E60B0D12</color> <!-- Volume popup background: Ink Black -->
+    <color name="icon_volume_dialog_color">#FFFFFFFF</color> <!-- Volume popup icons -->
+
+    <color name="magic_color_quaternary">#FFFFFFFF</color>
+    <color name="magic_color_text_primary">#FFFFFFFF</color>
+    <color name="magic_color_secondary">#FFFFFFFF</color>
+    <color name="qs_customize_background_color1">#E60B0D12</color> <!-- Inactive toggle bg in quick settings -->
+    <color name="notification_background_color_without_alpha">#E60B0D12</color>
+    <color name="panel_slider_blur_mask">#E60B0D12</color>
+    <color name="panel_slider_no_blur_color">#E60B0D12</color>
+</resources>
